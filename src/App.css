@@ -1,38 +1,128 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+.center {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.marginTopBottom {
+  margin: 15px 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+
+
+
+/* Admin Panel */
+.Dashborad {
+  width: 16%;
+  float: left;
+  margin: 1px 0;
+  height: 100vh;
+  background: #fff;
+  border-right: 1px solid #f7f7f7;
+  margin-right: 1%;
+}
+
+.Dashborad ul {
+  list-style: none;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.Dashborad ul li {
+  margin: 5px 5px;
+  background: #a3dc7e;
+  border: 1px solid #83bb5e;
+  overflow: hidden;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.Dashborad ul li a {
+  color: #333;
+  display: block;
+  padding: 8px 15px;
+}
+
+.Dashborad ul li a:hover {}
+
+.Dashborad ul li a>span {
+  margin-right: 8px;
+}
+
+.ProductOptions {
+  width: 83%;
+  float: left;
+  margin: 15px 0;
+}
+
+@media (max-width: 800px) {
+  .Dashborad {
+    width: 100%;
+    margin: 0 0;
+    border-right: 0;
+  margin-right: 0;
+  height: auto;
+  }
+  .ProductOptions {
+    width: 100%;
+    margin: 2px 0;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.PageTitle {
+  line-height: 40px;
+  background: #d3a9e8;
+  padding: 8px 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-family: 'Montserrat', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.PageTitle>h3 {}
+
+.InputText {
+  background: #fff;
+  padding: 5px 10px;
+  height: 35px;
+  width: 100%;
+  border: 1px solid #dedede;
+  border-radius: 6px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.InputSubmit {
+  background: #8fc76b;
+  padding: 5px 10px;
+  height: 35px;
+  width: 100px;
+  margin-left: -1px;
+  border: 1px solid #8fc76b;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.InputText:focus,
+.InputSubmit:focus {
+  outline: none;
 }

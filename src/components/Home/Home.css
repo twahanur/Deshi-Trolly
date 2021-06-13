@@ -1,0 +1,63 @@
+.Search {
+    margin: 15px 0;
+    text-align: center;
+}
+
+.Search>h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 15px 0;
+}
+
+.Search input[type="text"] {
+    background: #fff;
+    padding: 5px 10px;
+    height: 35px;
+    width: 25%;
+    border: 1px solid #dedede;
+    border-radius: 6px 0px 0px 6px;
+}
+
+.Search input[type="submit"] {
+    background: #8fc76b;
+    padding: 5px 10px;
+    height: 35px;
+    width: 100px;
+    margin-left: -1px;
+    border: 1px solid #8fc76b;
+    border-radius: 0px 6px 6px 0px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.Search input[type="submit"]:focus,
+.Search input[type="text"]:focus {
+    outline: none;
+}
+
+.Products {
+    width: 100%;
+    margin: 10px 0;
+    text-align: center;
+}
+
+@media (max-width: 940px) {
+    .Search input[type="text"] {
+        width: 70%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

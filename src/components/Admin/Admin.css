@@ -1,0 +1,41 @@
+.FormDesign {
+    width: 48%;
+    float: left;
+    margin: 0 1%;
+    padding: 10px 10px;
+    border: 0px solid #ccc;
+}
+.ImageUploadPreview {
+    text-align: center;
+    margin: 10px 0;
+    display: block;
+}
+.Deff {
+    margin: 10px 0;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+.ImageUploadPreview .Deff img {
+    width: 100px;
+    height: 100px;
+}
+.Deff p {
+    margin: 10px 0;
+}
+.ErrorMSG {
+    display: block;
+    overflow: hidden;
+    height: 20px;
+}
+.ErrorMSG span {
+    color: red;
+    margin: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+}
+.BtnDsbl {
+    cursor: not-allowed;
+    pointer-events: none;
+}

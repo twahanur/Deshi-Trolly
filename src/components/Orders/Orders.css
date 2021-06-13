@@ -1,0 +1,78 @@
+.CompleteOrders {
+    font-size: 15px;
+    font-weight: 700;
+    background-color: #f7f7f7;
+    padding: 8px;
+    color: #737373;
+    margin: 10px 0;
+    border-radius: 6px;
+}
+.TotalPrice {
+    background-color: #f3f3f3;
+    text-align: center;
+    margin-right: 100px;
+    font-size: 14px;
+}
+.URProfileInfo {
+    width: 100%;
+    margin: 20px 0;
+    overflow: hidden;
+}
+.URProfileInfo p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 15px;
+    text-align: center;
+}
+.UserBox {
+    width: 50%;
+    margin: 10px 0;
+}
+.UserPP {
+    width: 20%;
+    float: left;
+    display: flex;
+    text-align: center;
+}
+.UserPP img {
+    width: 100%;
+    height: 115px;
+    padding: 10px;
+    border-radius: 50%;
+}
+.URName {
+    width: 80%;
+    float: left;
+    padding: 10px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: #444;
+}
+.URMail {
+    font-family: 'PT Sans', sans-serif;
+}
+.VOK, .VNO {
+    font-size: 12px;
+    margin-left: 5px;
+}
+.VOK {
+    color: green;
+}
+.VNO {
+    color: red;
+}
+
+
+@media (max-width: 940px) {
+    .UserBox {
+        width: 80%;
+        margin: 10px 0;
+    }
+}
+@media (max-width: 768px) {
+    .UserBox {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,193 @@
+html {
+    scroll-behavior: smooth;
+  }
+
+header {
+    width: 100%;
+    background: #fff;
+    box-shadow: 1px 1px 2px #e6e6e6;
+    overflow: hidden;
+}
+
+header .Logo {
+    float: left;
+    width: 20%;
+}
+
+header .Logo a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 54px;
+}
+
+header .Logo img {
+    width: 170px;
+    height: auto;
+    margin-top: 6px;
+}
+
+header .MainMenu {
+    width: 80%;
+    float: right;
+    display: block;
+}
+
+header .MainMenu ul {
+    list-style: none;
+    float: right;
+}
+
+header .MainMenu ul li {
+    float: left;
+    line-height: 54px;
+}
+
+header .MainMenu ul li a,
+.LUser {
+    padding: 0 15px;
+    color: #111111;
+    font-size: 14px;
+}
+
+header .MainMenu ul li a:hover {
+    color: #383838;
+    font-weight: bold;
+
+}
+
+.LUser {
+    position: relative;
+}
+
+.LUser img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+}
+.LUser span {
+    margin-left: 20px;
+}
+.LoginBtn {
+    background: #8fc76b;
+    padding: 7px 20px;
+    color: #fff;
+    border-radius: 5px;
+    transition: background .2s;
+}
+
+.LoginBtn:hover {
+    background: #ebee3f;
+}
+
+.NavBar {
+    float: right;
+    width: 70%;
+    text-align: right;
+    line-height: 54px;
+    display: none;
+}
+
+.NavBar>span {
+    color: #111111;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 935px) {
+    header .Logo {
+        width: 30%;
+    }
+
+    header .MainMenu {
+        width: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    header .MainMenu {
+        display: none;
+    }
+    .NavBar {
+        display: block;
+    }
+
+    header .Responsive {
+        position: absolute;
+        left: 0;
+        margin-top: 54px;
+        height: 100vh;
+        background: rgb(255, 255, 255);
+        width: 100%;
+        z-index: 99999;
+        border-top: 1px solid #e6e6e6;
+    }
+
+    header .Responsive ul {
+        list-style: none;
+    }
+
+    header .Responsive ul li {
+        margin: 2px 0;
+    }
+
+    header .Responsive ul li a {
+        display: block;
+        padding: 15px 10px;
+        text-align: center;
+        color: #111111;
+        border-bottom: 1px solid #ececec;
+        font-size: 14px;
+    }
+
+    header .Responsive ul li:last-child a {
+        border-bottom: none;
+    }
+
+    header .Responsive ul li a:hover {
+        background-color: #f3f3f3;
+    }
+
+    .LoginBtn {
+        background: #8fc76b;
+        padding: 7px 60px;
+        color: #fff;
+        border-radius: 5px;
+        transition: background .2s;
+    }
+}
+
+@media (min-width: 768px) {
+    header .Responsive {
+        width: 70%;
+        float: right;
+        display: block;
+    }
+
+    header .Responsive ul {
+        list-style: none;
+        float: right;
+    }
+
+    header .Responsive ul li {
+        float: left;
+        line-height: 54px;
+    }
+
+    header .Responsive ul li a {
+        padding: 0 15px;
+        color: #111111;
+        font-size: 14px;
+    }
+
+    header .Responsive ul li a:hover {
+        color: #5c5c5c;
+    }
+}

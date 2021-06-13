@@ -1,0 +1,49 @@
+.Login {
+    margin: 20px 0;
+    text-align: center!important;
+}
+.login > h3 {
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
+    color: #444;
+}
+.GoogleSignIn-Btn, .GitHubSignIn-Btn {
+    border-radius: 50px;
+    border: 1px solid #ccc;
+    outline: none;
+    background-color: #efefef;
+    padding: 10px;
+    width: 40%;
+    cursor: pointer;
+    margin-top: 10px;
+    position: relative;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+   
+}
+.GoogleSignIn-Btn img, .GitHubSignIn-Btn img {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 23%;
+    left: 5%;
+    border-radius: 50%;
+    line-height: 30px;
+    text-align: center;
+}
+.GoogleSignIn-Btn p, .GitHubSignIn-Btn p {
+    display: inline;
+}
+
+
+
+@media (max-width: 768px) {
+    .GoogleSignIn-Btn, .GitHubSignIn-Btn {
+        width: 70%;
+    }
+}
+@media (max-width: 500px) {
+    .GoogleSignIn-Btn, .GitHubSignIn-Btn {
+        width: 100%;
+    }
+}
